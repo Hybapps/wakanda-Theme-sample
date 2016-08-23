@@ -1,0 +1,46 @@
+<ion-view title="add users">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+            <form ng-submit="addItem()"><label>Add a new users</label>
+            <input type="text" ng-model="newItem"><br />
+            <input type="submit" value="Add" />
+            </form>
+            
+
+    </ion-content>
+</ion-view>
+
+<!--
+<ion-view view-title="{{lang_config.Contactus}}" cache-view="false" >
+    <ion-content class="contact_us banner" ng-class="{'nobanner':image_list.length==0}">
+        <form class="animated slideInUp"  name="contact_form">
+            <h3>Allways get in touch</h3>
+            <p>
+                Always stay connected to your connection with one
+                of our staff to answer all inquiries...
+            </p>
+
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="email" placeholder="{{lang_config.Email}}" ng-model="Form_Data.email" required>
+                </label>
+                <label class="item item-input">
+                    <input type="text"  placeholder="{{lang_config.Name}}" ng-model="Form_Data.name" required>
+                </label><label class="item item-input">
+                    <input type="text" placeholder="{{lang_config.subject}}"ng-model="Form_Data.subject" required>
+                </label>
+                <label class="item item-input">
+                    <textarea rows="7" placeholder="{{lang_config.message}"ng-model="Form_Data.message" required></textarea>
+                </label> 
+            </div>
+            <a  ng-disabled="contact_form.$invalid"  ng-click="SendEmail()" class="button button-full button-positive contact_btn">
+             {{lang_config.Send}}
+            </a>
+        </form>
+    </ion-content>
+    <ion-footer-bar  class="bannerfooter" ng-class="{'nobannerfooter':image_list.length==0}">
+     <div class="banner"> 
+       <img ng-click="Show_modal_banner(ads_banner.ad_image,ads_banner.ad_link,ads_banner.ad_details)" 
+            ng-if="image_list.length>0"  alt=''  ng-src="{{ads_banner.ad_image}}"/> 
+   </div>     
+</ion-footer-bar>
+</ion-view  >-->

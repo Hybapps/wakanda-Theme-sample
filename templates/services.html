@@ -1,0 +1,24 @@
+<ion-view view-title="Services">
+
+  <ion-content>
+   <div class="list service_list">
+    <a class="item items"
+       collection-repeat="item in Services"
+       collection-item-width="'100%'"
+       collection-item-height="125"> 
+      
+      <div class="row">
+       <div class="col col-25">
+        <img src="img/{{item.servImage }}"/>
+       </div>
+       <div class="col">
+        <h3>{{item.servName }}</h3>
+        <p>
+            {{item.servdetails  }}
+        </p>
+       </div>
+      </div>
+    </a>
+  </div>
+  </ion-content>
+</ion-view>

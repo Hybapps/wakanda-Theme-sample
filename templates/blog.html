@@ -1,0 +1,25 @@
+<ion-view view-title="Blog">
+      
+  <ion-content>
+<!--   <ion-refresher   pulling-text="Pull to refresh" on-refresh="Refresh()"></ion-refresher>-->
+   <div class="list blog_list">
+    <a href="#/app/detail" class="item items"
+       collection-repeat="item in Blogs"
+       collection-item-width="'100%'"
+       collection-item-height="330"> 
+    
+   <div class="blog_item">
+    <div class="blog_img" style="background:url(img/b1.png); background-size:100% 100%"></div>
+    <div class="det">
+    <h3>{{item.blogTitle}}</h3>
+    <p class="date"><span>Posted On </span>{{convertdate(item.blogDate)}} /<span> By</span> Fida</p>
+      <p>
+        {{item.blogDetails}}
+      </p>
+    </div>   
+    </div>  
+    </a>
+  </div>
+  <ion-infinite-scroll on-infinite="Load_Posts()" distance="2%" ng-if="!StopLoadMore"></ion-infinite-scroll>
+</ion-content>
+</ion-view>
